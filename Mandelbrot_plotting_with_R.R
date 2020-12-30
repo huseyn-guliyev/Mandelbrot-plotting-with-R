@@ -1,4 +1,6 @@
-install.packages("mandelbrot")
+
+## uncomment if needed
+#install.packages("mandelbrot")
 library(mandelbrot)
 
 
@@ -15,4 +17,7 @@ blues <- RColorBrewer::brewer.pal(9, "Blues")
 cols <- mandelbrot_palette(blues, in_set = "white",
                            fold = TRUE, reps = 2)
 plot(view, col = cols, transform = "log") 
+
+
+
 
